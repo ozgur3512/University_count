@@ -8,7 +8,7 @@ soup=BeautifulSoup(content,"html.parser")
 a=soup.find_all("tr")
 while True:
     x=0
-    sehir_ismi=input("Sehir ismi gir:")
+    sehir_ismi=input("City Name(Caps):")
     for i in a:
         c=i.text
         c=c.replace("\n"," ")
